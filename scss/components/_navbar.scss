@@ -9,14 +9,17 @@
   padding: 100px 0px;
   z-index: 100;
   transition: 0.8s;
-  a {
-    display: block;
-    padding: 15px;
-    font-size: 20px;
-    color: rgb(10, 10, 10);
-    text-transform: uppercase;
-    text-decoration: none;
-    transition: 0.4s;
+  li {
+    list-style: none;
+    a {
+      display: block;
+      padding: 15px;
+      font-size: 20px;
+      color: rgb(10, 10, 10);
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: 0.4s;
+    }
   }
 }
 

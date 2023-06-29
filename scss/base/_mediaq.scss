@@ -15,9 +15,11 @@
     width: auto;
     height: auto;
     padding: 0px 0px;
-    a {
-      padding: 0px 5px 5px;
-      font-size: 18px;
+    li {
+      a {
+        padding: 0px 5px 5px;
+        font-size: 18px;
+      }
     }
   }
 
@@ -56,14 +58,23 @@
   }
 
   .rstitle {
+    margin-bottom: 1%;
     font-size: 30px;
   }
 
-  .rs_icons a {
+  .rs_icons li {
+    list-style: none;
+    a {
+      color: white;
+      font-size: 25px;
+      padding: 8px 7px;
+    }
+  }
+  /* .rs_icons a {
     color: white;
     font-size: 25px;
     padding: 8px 7px;
-  }
+  } */
 
   .deraut {
     position: relative;

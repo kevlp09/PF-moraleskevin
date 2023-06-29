@@ -53,7 +53,10 @@ main {
   z-index: 100;
   transition: 0.8s;
 }
-.menu a {
+.menu li {
+  list-style: none;
+}
+.menu li a {
   display: block;
   padding: 15px;
   font-size: 20px;
@@ -173,6 +176,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 }
 
 .rs_container {
@@ -191,7 +195,10 @@ footer {
   flex-wrap: wrap;
 }
 
-.rs_icons a {
+.rs_icons li {
+  list-style: none;
+}
+.rs_icons li a {
   color: white;
   font-size: 20px;
   padding: 0 14px;
@@ -378,7 +385,7 @@ footer {
     height: auto;
     padding: 0px 0px;
   }
-  .menu a {
+  .menu li a {
     padding: 0px 5px 5px;
     font-size: 18px;
   }
@@ -412,13 +419,22 @@ footer {
     bottom: 1.5rem;
   }
   .rstitle {
+    margin-bottom: 1%;
     font-size: 30px;
   }
-  .rs_icons a {
+  .rs_icons li {
+    list-style: none;
+  }
+  .rs_icons li a {
     color: white;
     font-size: 25px;
     padding: 8px 7px;
   }
+  /* .rs_icons a {
+    color: white;
+    font-size: 25px;
+    padding: 8px 7px;
+  } */
   .deraut {
     position: relative;
     bottom: 1rem;
