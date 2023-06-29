@@ -1,0 +1,54 @@
+.menu {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: rgb(10, 210, 203);
+  right: -100%;
+  top: 0;
+  text-align: end;
+  padding: 100px 0px;
+  z-index: 100;
+  transition: 0.8s;
+  a {
+    display: block;
+    padding: 15px;
+    font-size: 20px;
+    color: rgb(10, 10, 10);
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.4s;
+  }
+}
+
+.mostrar-menu,
+.esconder-menu {
+  font-size: 30px;
+  cursor: pointer;
+  transition: 0.4s;
+  display: block;
+}
+
+.mostrar-menu {
+  order: 1;
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 1px 5px;
+}
+.esconder-menu {
+  position: absolute;
+  top: 51%;
+  right: 7%;
+}
+.menu a:hover,
+.mostrar-menu:hover,
+.esconder-menu:hover {
+  color: rgb(255, 255, 255);
+}
+
+#check {
+  display: none;
+}
+
+#check:checked ~ .menu {
+  right: 0;
+}

@@ -1,0 +1,15 @@
+.box {
+  padding: 4% 0 5%;
+}
+
+.imglinks {
+  padding: 0.5rem 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.link_lp a img,
+.link_lpu a img {
+  width: 33vw;
+}

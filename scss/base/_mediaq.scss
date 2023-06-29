@@ -1,0 +1,220 @@
+@media (min-width: 768px) {
+  /* HEADER */
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .row {
+    justify-content: space-evenly;
+    padding: 10px 20px 0px;
+  }
+  .menu {
+    position: static;
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+    padding: 0px 0px;
+    a {
+      padding: 0px 5px 5px;
+      font-size: 18px;
+    }
+  }
+
+  .mostrar-menu,
+  .esconder-menu {
+    display: none;
+  }
+
+  .contenido-banner {
+    top: 50%;
+    h2 {
+      font-size: 35px;
+    }
+    .subt {
+      font-size: 35px;
+      padding-top: 15px;
+    }
+  }
+
+  /* SECCION FOOTER */
+  footer {
+    padding-top: 3rem;
+  }
+
+  .row-footer {
+    padding: 0 0 0;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .rs_container {
+    position: relative;
+    background: gray;
+    padding: 0.5rem 0 0;
+    bottom: 1.5rem;
+  }
+
+  .rstitle {
+    font-size: 30px;
+  }
+
+  .rs_icons a {
+    color: white;
+    font-size: 25px;
+    padding: 8px 7px;
+  }
+
+  .deraut {
+    position: relative;
+    bottom: 1rem;
+    font-size: 18px;
+    width: 100%;
+    padding: 0.5rem 0;
+    text-align: center;
+    color: white;
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  }
+
+  /* CONTENIDO PAGES*/
+  /* INICIO */
+  .imglog {
+    max-width: 500px;
+    max-height: 350px;
+  }
+  /* HISTORIA */
+  .banda h1 {
+    top: 75%;
+    left: 5%;
+    font-size: 50px;
+  }
+  .containerimg1 p {
+    text-align: center;
+    width: 100vw;
+    max-width: 1000px;
+    min-height: 200px;
+    padding: 0 10px 0px;
+    margin-bottom: 1px;
+  }
+  .containerimg2 {
+    width: 60%;
+  }
+
+  .descripcion {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .parrafos {
+    font-size: 22px;
+    /* padding-top: 1rem; */
+  }
+  /* INTEGRANTES */
+  .imgintegrantes {
+    max-width: 95vw;
+    max-height: 1000px;
+    border-radius: 10px;
+    /* margin: 30px 0 0; */
+  }
+  /* DISCOGRAFIA */
+  .imgdiscrigth {
+    float: right;
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    max-width: 500px;
+    max-height: 600px;
+    margin: 12px 0 12px 12px;
+  }
+
+  .imgdiscleft {
+    float: left;
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    max-width: 500px;
+    max-height: 600px;
+    margin: 12px 12px 12px 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .menu a {
+    padding: 10px 7px 10px;
+    font-size: 18px;
+  }
+  .row {
+    justify-content: space-between;
+    padding: 10px 20px 10px;
+  }
+  .parrafos {
+    font-size: 22px;
+    /* padding-top: 1rem; */
+  }
+  .link_lp a img,
+  .link_lpu a img {
+    width: 100%;
+  }
+  .imginicios {
+    float: left;
+    width: 75vw;
+    max-width: 500px;
+    min-width: 320px;
+    margin: auto;
+    border-radius: 10px;
+  }
+  .containerimg1 {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    border-radius: 10px;
+    margin: 50px auto;
+  }
+  .containerimg1 p {
+    text-align: center;
+    width: 50vw;
+  }
+  /* DISCOGRAFIA */
+  .imgdiscrigth {
+    height: auto;
+    width: auto;
+    max-width: 500px;
+    max-height: 500px;
+    margin: 12px 0 12px 12px;
+  }
+
+  .imgdiscleft {
+    height: auto;
+    width: auto;
+    max-width: 400px;
+    max-height: 500px;
+    margin: 12px 12px 12px 0;
+  }
+  .subtleft,
+  .subtrigth {
+    font-size: 30px;
+  }
+  .videoclip {
+    width: auto;
+    height: auto;
+    max-width: 60%;
+    max-height: 300px;
+  }
+}
+@media (min-width: 1440px) {
+  .artreanimation {
+    display: flex;
+    align-items: center;
+  }
+}

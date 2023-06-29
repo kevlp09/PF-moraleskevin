@@ -1,0 +1,570 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Genos", sans-serif;
+}
+
+main {
+  padding: 0 0 100px;
+}
+
+.container {
+  width: 95%;
+  margin: 0 1rem;
+}
+
+.subt {
+  font-size: 25px;
+  text-align: center;
+  padding-top: 0;
+}
+
+.row {
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.article {
+  height: 100%;
+  width: 100%;
+  margin: 30px 0 0;
+}
+
+.menu {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: rgb(10, 210, 203);
+  right: -100%;
+  top: 0;
+  text-align: end;
+  padding: 100px 0px;
+  z-index: 100;
+  transition: 0.8s;
+}
+.menu a {
+  display: block;
+  padding: 15px;
+  font-size: 20px;
+  color: rgb(10, 10, 10);
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+.mostrar-menu,
+.esconder-menu {
+  font-size: 30px;
+  cursor: pointer;
+  transition: 0.4s;
+  display: block;
+}
+
+.mostrar-menu {
+  order: 1;
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 1px 5px;
+}
+
+.esconder-menu {
+  position: absolute;
+  top: 51%;
+  right: 7%;
+}
+
+.menu a:hover,
+.mostrar-menu:hover,
+.esconder-menu:hover {
+  color: rgb(255, 255, 255);
+}
+
+#check {
+  display: none;
+}
+
+#check:checked ~ .menu {
+  right: 0;
+}
+
+#banner {
+  padding: 0 50px;
+  background-image: url(../img/LinkinPark.jpg);
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+}
+
+#banner::before {
+  content: " ";
+  background: rgba(63, 63, 63, 0.6);
+  width: 100%;
+  height: 50vh;
+  left: 0;
+  position: absolute;
+}
+
+.contenido-banner {
+  position: relative;
+  color: white;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 95%;
+  top: 45%;
+}
+.contenido-banner h2 {
+  text-align: center;
+  margin-bottom: 2px;
+  font-size: 30px;
+  font-weight: 400;
+  padding: 10px 0px;
+}
+.contenido-banner h2 span {
+  font-weight: 700;
+}
+
+.boton {
+  margin-bottom: 30px;
+}
+
+.boton-empezar {
+  text-decoration: none;
+  color: white;
+  border: 2px solid rgb(0, 116, 155);
+  padding: 5px 20px;
+  align-self: baseline;
+  transition: all 0.4s;
+  font-size: 20px;
+  background: rgba(5, 154, 149, 0.4);
+}
+.boton-empezar:hover {
+  background: rgba(10, 210, 203, 0.4);
+}
+
+header {
+  background: rgb(10, 210, 203);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+footer {
+  background: black;
+  padding-top: 1rem;
+}
+
+.row-footer {
+  padding: 0.3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.rs_container {
+  background: gray;
+  padding: 0.2rem;
+}
+
+.rstitle {
+  color: white;
+  font-size: 25px;
+}
+
+.rs_icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.rs_icons a {
+  color: white;
+  font-size: 20px;
+  padding: 0 14px;
+}
+
+.deraut {
+  font-size: 13px;
+  width: 100%;
+  padding: 0.5rem 0;
+  text-align: center;
+  color: white;
+}
+
+.deraut a {
+  color: white;
+  text-decoration: none;
+}
+
+.deraut a:hover {
+  color: green;
+}
+
+.box {
+  padding: 4% 0 5%;
+}
+
+.imglinks {
+  padding: 0.5rem 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.link_lp a img,
+.link_lpu a img {
+  width: 33vw;
+}
+
+.banda {
+  height: auto;
+  width: auto;
+  max-width: 800px;
+  max-height: 400px;
+  margin: 2% auto;
+  position: relative;
+}
+.banda h1 {
+  -webkit-text-stroke: 1px black;
+  position: absolute;
+  top: 75%;
+  left: 5%;
+  color: white;
+  font-size: 30px;
+}
+
+.imgbanda {
+  border-radius: 10px;
+  max-width: 100%;
+}
+
+.parrafos {
+  font-size: 15px;
+  /* padding-top: 1rem */
+}
+
+.containerimg1 {
+  padding: 20px 0 0px;
+  background: rgb(213, 213, 213);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 65%;
+  align-items: center;
+  border-radius: 10px;
+  margin: 50px auto;
+}
+.containerimg1 p {
+  text-align: center;
+  width: 65vw;
+  max-width: 240px;
+  min-height: 320px;
+  padding: 0 10px 0px;
+}
+
+.imginicios {
+  width: 75vw;
+  max-width: 500px;
+  min-width: 320px;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.imglog {
+  border-radius: 10px;
+  height: auto;
+  width: auto;
+  max-width: 320px;
+  max-height: 350px;
+}
+
+.descripcion {
+  margin-top: 10px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.containerimg2 {
+  padding: 10px 0px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  background: rgb(213, 213, 213);
+  width: 95%;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+.imgintegrantes {
+  width: 100%;
+  max-width: 95vw;
+  max-height: 300px;
+  border-radius: 15px;
+  /* margin: 30px 0 0; */
+}
+
+.articulos {
+  display: flex;
+  flex-direction: column;
+}
+
+.subtleft {
+  font-size: 25px;
+  text-align: left;
+  padding-top: 0;
+}
+
+.subtrigth {
+  font-size: 25px;
+  text-align: right;
+  padding-top: 0;
+}
+
+.imgdiscrigth {
+  float: right;
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  max-width: 200px;
+  max-height: 500px;
+  margin: 12px 0 12px 12px;
+}
+
+.imgdiscleft {
+  float: left;
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  max-width: 200px;
+  max-height: 500px;
+  margin: 12px 12px 12px 0;
+}
+
+@media (min-width: 768px) {
+  /* HEADER */
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .row {
+    justify-content: space-evenly;
+    padding: 10px 20px 0px;
+  }
+  .menu {
+    position: static;
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+    padding: 0px 0px;
+  }
+  .menu a {
+    padding: 0px 5px 5px;
+    font-size: 18px;
+  }
+  .mostrar-menu,
+  .esconder-menu {
+    display: none;
+  }
+  .contenido-banner {
+    top: 50%;
+  }
+  .contenido-banner h2 {
+    font-size: 35px;
+  }
+  .contenido-banner .subt {
+    font-size: 35px;
+    padding-top: 15px;
+  }
+  /* SECCION FOOTER */
+  footer {
+    padding-top: 3rem;
+  }
+  .row-footer {
+    padding: 0 0 0;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .rs_container {
+    position: relative;
+    background: gray;
+    padding: 0.5rem 0 0;
+    bottom: 1.5rem;
+  }
+  .rstitle {
+    font-size: 30px;
+  }
+  .rs_icons a {
+    color: white;
+    font-size: 25px;
+    padding: 8px 7px;
+  }
+  .deraut {
+    position: relative;
+    bottom: 1rem;
+    font-size: 18px;
+    width: 100%;
+    padding: 0.5rem 0;
+    text-align: center;
+    color: white;
+  }
+  .deraut a {
+    color: white;
+    text-decoration: none;
+  }
+  /* CONTENIDO PAGES*/
+  /* INICIO */
+  .imglog {
+    max-width: 500px;
+    max-height: 350px;
+  }
+  /* HISTORIA */
+  .banda h1 {
+    top: 75%;
+    left: 5%;
+    font-size: 50px;
+  }
+  .containerimg1 p {
+    text-align: center;
+    width: 100vw;
+    max-width: 1000px;
+    min-height: 200px;
+    padding: 0 10px 0px;
+    margin-bottom: 1px;
+  }
+  .containerimg2 {
+    width: 60%;
+  }
+  .descripcion {
+    font-size: 20px;
+    text-align: center;
+  }
+  .parrafos {
+    font-size: 22px;
+    /* padding-top: 1rem; */
+  }
+  /* INTEGRANTES */
+  .imgintegrantes {
+    max-width: 95vw;
+    max-height: 1000px;
+    border-radius: 10px;
+    /* margin: 30px 0 0; */
+  }
+  /* DISCOGRAFIA */
+  .imgdiscrigth {
+    float: right;
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    max-width: 500px;
+    max-height: 600px;
+    margin: 12px 0 12px 12px;
+  }
+  .imgdiscleft {
+    float: left;
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    max-width: 500px;
+    max-height: 600px;
+    margin: 12px 12px 12px 0;
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .menu a {
+    padding: 10px 7px 10px;
+    font-size: 18px;
+  }
+  .row {
+    justify-content: space-between;
+    padding: 10px 20px 10px;
+  }
+  .parrafos {
+    font-size: 22px;
+    /* padding-top: 1rem; */
+  }
+  .link_lp a img,
+  .link_lpu a img {
+    width: 100%;
+  }
+  .imginicios {
+    float: left;
+    width: 75vw;
+    max-width: 500px;
+    min-width: 320px;
+    margin: auto;
+    border-radius: 10px;
+  }
+  .containerimg1 {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    border-radius: 10px;
+    margin: 50px auto;
+  }
+  .containerimg1 p {
+    text-align: center;
+    width: 50vw;
+  }
+  /* DISCOGRAFIA */
+  .imgdiscrigth {
+    height: auto;
+    width: auto;
+    max-width: 500px;
+    max-height: 500px;
+    margin: 12px 0 12px 12px;
+  }
+  .imgdiscleft {
+    height: auto;
+    width: auto;
+    max-width: 400px;
+    max-height: 500px;
+    margin: 12px 12px 12px 0;
+  }
+  .subtleft,
+  .subtrigth {
+    font-size: 30px;
+  }
+  .videoclip {
+    width: auto;
+    height: auto;
+    max-width: 60%;
+    max-height: 300px;
+  }
+}
+@media (min-width: 1440px) {
+  .artreanimation {
+    display: flex;
+    align-items: center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

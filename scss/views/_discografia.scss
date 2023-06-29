@@ -1,0 +1,38 @@
+.articulos {
+  display: flex;
+  flex-direction: column;
+}
+
+.subtleft {
+  font-size: 25px;
+  text-align: left;
+  padding-top: 0;
+}
+
+.subtrigth {
+  font-size: 25px;
+  text-align: right;
+  padding-top: 0;
+}
+
+.imgdiscrigth {
+  float: right;
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  max-width: 200px;
+  max-height: 500px;
+  margin: 12px 0 12px 12px;
+}
+
+.imgdiscleft {
+  float: left;
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  max-width: 200px;
+  max-height: 500px;
+  margin: 12px 12px 12px 0;
+}

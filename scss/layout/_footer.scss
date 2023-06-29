@@ -1,0 +1,45 @@
+footer {
+  background: black;
+  padding-top: 1rem;
+}
+.row-footer {
+  padding: 0.3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.rs_container {
+  background: gray;
+  padding: 0.2rem;
+}
+.rstitle {
+  color: white;
+  font-size: 25px;
+}
+.rs_icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.rs_icons a {
+  color: white;
+  font-size: 20px;
+  padding: 0 14px;
+}
+
+.deraut {
+  font-size: 13px;
+  width: 100%;
+  padding: 0.5rem 0;
+  text-align: center;
+  color: white;
+}
+
+.deraut a {
+  color: white;
+  text-decoration: none;
+}
+
+.deraut a:hover {
+  color: green;
+}
