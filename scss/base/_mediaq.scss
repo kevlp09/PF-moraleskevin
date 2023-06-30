@@ -152,6 +152,19 @@
     max-height: 600px;
     margin: 12px 12px 12px 0;
   }
+  /* VIDEOGRAFIA */
+  .containervid {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .videoclip {
+    height: 50vw;
+  }
+  .parrafos-v {
+    font-size: 22px;
+    text-align: center;
+    align-items: center;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -216,11 +229,14 @@
   .subtrigth {
     font-size: 30px;
   }
+  /* VIDEOGRAFIA */
+  .containervid {
+    width: 90%;
+    margin: 0 auto;
+  }
   .videoclip {
-    width: auto;
-    height: auto;
-    max-width: 60%;
-    max-height: 300px;
+    width: 50%;
+    height: 30vw;
   }
 }
 @media (min-width: 1440px) {

@@ -367,6 +367,26 @@ footer {
   margin: 12px 12px 12px 0;
 }
 
+.containervid {
+  width: 95%;
+  margin: 0 1rem;
+}
+
+.videoclip {
+  margin-right: 20px;
+  float: left;
+}
+
+.parrafos-v {
+  font-size: 15px;
+  text-align: center;
+  align-items: center;
+}
+
+.subt-v {
+  font-size: 22px;
+}
+
 @media (min-width: 768px) {
   /* HEADER */
   .container {
@@ -507,6 +527,19 @@ footer {
     max-height: 600px;
     margin: 12px 12px 12px 0;
   }
+  /* VIDEOGRAFIA */
+  .containervid {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .videoclip {
+    height: 50vw;
+  }
+  .parrafos-v {
+    font-size: 22px;
+    text-align: center;
+    align-items: center;
+  }
 }
 @media (min-width: 1024px) {
   .container {
@@ -569,11 +602,14 @@ footer {
   .subtrigth {
     font-size: 30px;
   }
+  /* VIDEOGRAFIA */
+  .containervid {
+    width: 90%;
+    margin: 0 auto;
+  }
   .videoclip {
-    width: auto;
-    height: auto;
-    max-width: 60%;
-    max-height: 300px;
+    width: 50%;
+    height: 30vw;
   }
 }
 @media (min-width: 1440px) {
