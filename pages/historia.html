@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
     <!-- STYLES CSS -->
     <link rel="stylesheet" href="../css/style.css" />
     <!-- GOOGLE FONTS -->
@@ -18,6 +20,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- ANIMATED -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <!-- ICONO PESTAÑA -->
     <link rel="shortcut icon" href="../img/lp.svg" type="image/x-icon" />
     <title>HISTORIA</title>
@@ -29,14 +36,17 @@
         <div class="row">
           <div>
             <a href="../index.html"
-              ><img class="logo" src="../img/LINKIN PARK.png" alt="logo web"
+              ><img
+                class="logo animate__animated animate__fadeIn"
+                src="../img/LINKIN PARK.png"
+                alt="logo web"
             /></a>
           </div>
           <input type="checkbox" id="check" />
           <label for="check" class="mostrar-menu">&#8801;</label>
           <ul class="menu">
             <li><a href="../index.html">inicio</a></li>
-            <li><a href="./historia.html">historia</a></li>
+            <li><a href="./historia.html" class="active">historia</a></li>
             <li><a href="../pages/integrantes.html">integrantes</a></li>
             <li><a href="../pages/discografia.html">discografia</a></li>
             <li><a href="../pages/videografia.html">videografia</a></li>
@@ -48,13 +58,15 @@
     </header>
     <section id="banner">
       <div class="contenido-banner">
-        <h2><span>LINKIN PARK:</span> WEB BIOGRAFICA E INFORMATIVA</h2>
+        <h2 class="animate__animated animate__fadeIn">
+          <span>LINKIN PARK:</span> WEB BIOGRAFICA E INFORMATIVA
+        </h2>
       </div>
     </section>
-    <!-- comienza primera seccion -->
+    <!-- CONTENIDO HISTORIA -->
     <main>
       <div class="banda">
-        <img class="imgbanda" src="../img/banda.jpg" alt="banda" />
+        <img class="imgbanda" src="../img/banda.jpg" alt="historia banda" />
         <h1>HISTORIA</h1>
       </div>
 
@@ -139,7 +151,7 @@
             <img
               class="imginicios"
               src="../img/lpinicios.jpg"
-              alt="logos a traves de los años"
+              alt="primer foto como banda"
             />
           </div>
 

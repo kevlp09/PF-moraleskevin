@@ -1,19 +1,16 @@
 .containervid {
-  width: 95%;
-  margin: 0 1rem;
+  width: 90%;
+  margin: 0 auto;
 }
 
-.videoclip {
-  margin-right: 20px;
-  float: left;
+.parrafos-v,
+.parrafos-vl {
+  font-size: $parrafos480;
+  text-align: $textalign;
 }
 
-.parrafos-v {
-  font-size: 15px;
-  text-align: center;
-  align-items: center;
-}
-
-.subt-v {
+.subt-v,
+.subt-vr {
   font-size: 22px;
+  text-align: center;
 }

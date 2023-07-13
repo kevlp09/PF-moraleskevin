@@ -18,16 +18,14 @@
     li {
       a {
         padding: 0px 5px 5px;
-        font-size: 18px;
+        font-size: 22px;
       }
     }
   }
-
   .mostrar-menu,
   .esconder-menu {
     display: none;
   }
-
   .contenido-banner {
     top: 50%;
     h2 {
@@ -39,29 +37,25 @@
     }
   }
 
-  /* SECCION FOOTER */
+  /* FOOTER */
   footer {
     padding-top: 3rem;
   }
-
   .row-footer {
     padding: 0 0 0;
     flex-wrap: wrap;
     justify-content: space-evenly;
   }
-
   .rs_container {
     position: relative;
     background: gray;
     padding: 0.5rem 0 0;
     bottom: 1.5rem;
   }
-
   .rstitle {
     margin-bottom: 1%;
     font-size: 30px;
   }
-
   .rs_icons li {
     list-style: none;
     a {
@@ -70,12 +64,6 @@
       padding: 8px 7px;
     }
   }
-  /* .rs_icons a {
-    color: white;
-    font-size: 25px;
-    padding: 8px 7px;
-  } */
-
   .deraut {
     position: relative;
     bottom: 1rem;
@@ -113,23 +101,23 @@
   .containerimg2 {
     width: 60%;
   }
-
   .descripcion {
     font-size: 20px;
     text-align: center;
   }
-
   .parrafos {
-    font-size: 22px;
-    /* padding-top: 1rem; */
+    font-size: $parrafos768;
   }
+
   /* INTEGRANTES */
   .imgintegrantes {
+    text-align: center;
+    width: 60%;
     max-width: 95vw;
-    max-height: 1000px;
+    max-height: 500px;
     border-radius: 10px;
-    /* margin: 30px 0 0; */
   }
+
   /* DISCOGRAFIA */
   .imgdiscrigth {
     float: right;
@@ -141,7 +129,6 @@
     max-height: 600px;
     margin: 12px 0 12px 12px;
   }
-
   .imgdiscleft {
     float: left;
     border-radius: 10px;
@@ -152,24 +139,46 @@
     max-height: 600px;
     margin: 12px 12px 12px 0;
   }
+
   /* VIDEOGRAFIA */
-  .containervid {
+  .videoclip {
+    height: 50vw;
+    width: 80vw;
+  }
+  .vid-parr {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .parrafos-v,
+  .parrafos-vl {
+    font-size: $parrafos768;
+  }
+
+  /* LPU */
+  .containerlpu {
+    display: flex;
+    justify-content: center;
     width: 90%;
     margin: 0 auto;
   }
-  .videoclip {
+  .parrafos-lpu {
+    min-width: 400px;
+  }
+  .videolpu {
     height: 50vw;
   }
-  .parrafos-v {
-    font-size: 22px;
-    text-align: center;
+  .parrafos-lpu {
+    font-size: $parrafos768;
+    text-align: $textalign;
     align-items: center;
   }
 }
 
 @media (min-width: 1024px) {
+  /* GLOVAL */
   .container {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
   }
   .menu a {
@@ -181,9 +190,10 @@
     padding: 10px 20px 10px;
   }
   .parrafos {
-    font-size: 22px;
-    /* padding-top: 1rem; */
+    text-align: justify;
   }
+
+  /* HISTORIA */
   .link_lp a img,
   .link_lpu a img {
     width: 100%;
@@ -209,6 +219,7 @@
     text-align: center;
     width: 50vw;
   }
+
   /* DISCOGRAFIA */
   .imgdiscrigth {
     height: auto;
@@ -217,7 +228,6 @@
     max-height: 500px;
     margin: 12px 0 12px 12px;
   }
-
   .imgdiscleft {
     height: auto;
     width: auto;
@@ -229,19 +239,97 @@
   .subtrigth {
     font-size: 30px;
   }
+
   /* VIDEOGRAFIA */
   .containervid {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
   }
+  .subt-v {
+    text-align: start;
+    font-size: 22px;
+  }
+  .subt-vr {
+    text-align: end;
+    font-size: 22px;
+  }
   .videoclip {
-    width: 50%;
+    height: 40vw;
+    width: 60vw;
+  }
+  .vid-parr {
+    display: block;
+    flex-wrap: nowrap;
+  }
+  .floatleft {
+    float: left;
+    margin-right: 2rem;
+  }
+  .floatrigth {
+    float: right;
+    margin-left: 2rem;
+  }
+  .parrafos-v,
+  .parrafos-vl {
+    text-align: justify;
+    text-align: start;
+    min-width: 400px;
+  }
+
+  /* LPU */
+  .containerlpu {
+    align-items: center;
+    flex-wrap: nowrap;
+    p {
+      display: flex;
+      align-items: center;
+    }
+  }
+  .videolpu {
+    width: 55%;
     height: 30vw;
   }
+  .subt-lpu {
+    text-align: start;
+  }
+  .parrafos-lpu {
+    text-align: justify;
+    margin-left: 3rem;
+    min-height: 400px;
+    max-width: 400px;
+  }
 }
+
 @media (min-width: 1440px) {
+  /* GLOBAL */
+  .container {
+    width: 70%;
+    margin: 0 auto;
+  }
   .artreanimation {
     display: flex;
     align-items: center;
+  }
+
+  /* VIDEOGRAFIA */
+  .videoclip {
+    height: 25vw;
+    width: 40vw;
+  }
+  /* LPU */
+  .containerlpu {
+    width: 50%;
+    min-width: 60vw;
+  }
+  .containervid {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .videolpu {
+    width: 20%;
+    height: 25vw;
+  }
+  .subt-lpu {
+    font-size: $subt;
   }
 }

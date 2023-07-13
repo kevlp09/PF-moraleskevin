@@ -9,14 +9,19 @@ body {
   font-family: "Genos", sans-serif;
 }
 main {
-  padding: 0 0 100px;
+  background: url("../../img/fondobody2.1.png");
+  padding: 0 0 10px;
+  background-attachment: scroll;
+  margin: 0 auto;
 }
+
 .container {
   width: 95%;
   margin: 0 1rem;
 }
+
 .subt {
-  font-size: 25px;
+  font-size: 30px;
   text-align: center;
   padding-top: 0;
 }

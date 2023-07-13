@@ -4,20 +4,20 @@
 }
 
 .subtleft {
-  font-size: 25px;
+  font-size: $subt;
   text-align: left;
   padding-top: 0;
 }
 
 .subtrigth {
-  font-size: 25px;
+  font-size: $subt;
   text-align: right;
   padding-top: 0;
 }
 
 .imgdiscrigth {
   float: right;
-  border-radius: 10px;
+  border-radius: 15px;
   max-width: 100%;
   height: auto;
   width: auto;
@@ -28,7 +28,7 @@
 
 .imgdiscleft {
   float: left;
-  border-radius: 10px;
+  border-radius: 15px;
   max-width: 100%;
   height: auto;
   width: auto;

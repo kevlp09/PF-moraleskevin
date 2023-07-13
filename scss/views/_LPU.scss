@@ -1,0 +1,24 @@
+.containerlpu {
+  width: 100%;
+  min-width: 90vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.parrafos-lpu {
+  font-size: $parrafos480;
+  text-align: center;
+  align-items: center;
+  min-width: 300px;
+}
+
+.subt-lpu {
+  font-size: $subt;
+  text-align: $textalign;
+}
+
+.videolpu {
+  max-width: 400vw;
+  min-width: 40vw;
+}
